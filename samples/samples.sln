@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hypervisor", "hypervisor\hypervisor.vcxproj", "{8893FA1F-46FD-4CCC-9994-0729368D28FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		DebugUEFI|x64 = DebugUEFI|x64
+		DebugUEFI|x86 = DebugUEFI|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8893FA1F-46FD-4CCC-9994-0729368D28FB}.Debug|x64.ActiveCfg = DebugUEFI|x64
+		{8893FA1F-46FD-4CCC-9994-0729368D28FB}.Debug|x64.Build.0 = DebugUEFI|x64
+		{8893FA1F-46FD-4CCC-9994-0729368D28FB}.Debug|x86.ActiveCfg = DebugUEFI|Win32
+		{8893FA1F-46FD-4CCC-9994-0729368D28FB}.Debug|x86.Build.0 = DebugUEFI|Win32
+		{8893FA1F-46FD-4CCC-9994-0729368D28FB}.DebugUEFI|x64.ActiveCfg = DebugUEFI|x64
+		{8893FA1F-46FD-4CCC-9994-0729368D28FB}.DebugUEFI|x64.Build.0 = DebugUEFI|x64
+		{8893FA1F-46FD-4CCC-9994-0729368D28FB}.DebugUEFI|x86.ActiveCfg = DebugUEFI|Win32
+		{8893FA1F-46FD-4CCC-9994-0729368D28FB}.DebugUEFI|x86.Build.0 = DebugUEFI|Win32
+		{8893FA1F-46FD-4CCC-9994-0729368D28FB}.Release|x64.ActiveCfg = Release|x64
+		{8893FA1F-46FD-4CCC-9994-0729368D28FB}.Release|x64.Build.0 = Release|x64
+		{8893FA1F-46FD-4CCC-9994-0729368D28FB}.Release|x86.ActiveCfg = Release|Win32
+		{8893FA1F-46FD-4CCC-9994-0729368D28FB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB1F6315-2273-4847-A9F1-D3F31C15D4A1}
+	EndGlobalSection
+EndGlobal

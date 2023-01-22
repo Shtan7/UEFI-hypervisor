@@ -1,0 +1,6 @@
+[submodule "edk2"]
+	path = edk2
+	url = https://github.com/Shtan7/edk2
+[submodule "zydis"]
+	path = zydis
+	url = https://github.com/zyantific/zydis.git

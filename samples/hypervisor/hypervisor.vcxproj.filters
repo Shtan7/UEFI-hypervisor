@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="math">
+      <UniqueIdentifier>{03b8bed1-2457-46f2-96fe-b1aa293e5670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp">
+      <UniqueIdentifier>{7b3ef7c6-4423-4c8c-8da7-3150d01619c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp\exceptions">
+      <UniqueIdentifier>{a40113f2-974b-4fe6-9c10-0f1d12d4cfac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{84709543-5a40-4890-8851-68a480580b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{ee0705a1-d45b-48cc-853e-2f411e6c4c0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vshacks">
+      <UniqueIdentifier>{faad686f-fc0d-438d-8356-ba5c7c50256f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\headers">
+      <UniqueIdentifier>{9900e616-7951-4b4f-a70e-dd8dbcc34eac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="exc_common.cpp">
+      <Filter>cpp\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="exc_dispatch.cpp">
+      <Filter>cpp\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="fh4.cpp">
+      <Filter>cpp\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="type_info.cpp">
+      <Filter>cpp\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp_support.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="efi_stub.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="log.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="pow.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="scalbn.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="sqrt.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="ceil.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="math_common.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="edk2_vars.c">
+      <Filter>vshacks</Filter>
+    </ClCompile>
+    <ClCompile Include="sin.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="cos.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel_cos.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel_sin.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="rem_pio2.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel_rem_pio2.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="floor.c">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="hypervisor.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="invept.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="ept_handler.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="vcpu.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="vpid.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="vmexit_handler.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="tlsf.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="interrupt_handling.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="pt_handler.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="pe.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="win_driver.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="hook_builder.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="per_cpu_data.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="exc_common.hpp">
+      <Filter>cpp\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="type_info.hpp">
+      <Filter>cpp\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_support.hpp">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="efi_stub.hpp">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="uefi.hpp">
+      <Filter>cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="math_common.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="delete_constructors.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="common.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="drvproto.h">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="memory_manager.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="asm.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ept.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hypervisor.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="invept.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="msr.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ept_handler.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="segment.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="vmcall.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="x86.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="win_defs.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="pt.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpu.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="vmx.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="vpid.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="vmexit_handler.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="instruction_error.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="exit_reason.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="exit_qualification.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="exception.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="interrupt.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="tlsf.h">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="pt_handler.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="pe.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="win_driver.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="hook_builder.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hooking_common.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="per_cpu_data.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="throw_exception.asm">
+      <Filter>cpp\exceptions</Filter>
+    </MASM>
+    <MASM Include="enable_avx_.asm">
+      <Filter>core</Filter>
+    </MASM>
+    <MASM Include="common_asm_procs_.asm">
+      <Filter>core</Filter>
+    </MASM>
+    <MASM Include="invept_.asm">
+      <Filter>core</Filter>
+    </MASM>
+    <MASM Include="vmcall_.asm">
+      <Filter>core</Filter>
+    </MASM>
+    <MASM Include="vpid_.asm">
+      <Filter>core</Filter>
+    </MASM>
+    <MASM Include="vmexit_handler_.asm">
+      <Filter>core</Filter>
+    </MASM>
+    <MASM Include="interrupt_handling_.asm">
+      <Filter>core</Filter>
+    </MASM>
+    <MASM Include="vcpu_.asm">
+      <Filter>core</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
