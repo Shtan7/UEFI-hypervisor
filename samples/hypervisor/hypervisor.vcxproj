@@ -346,6 +346,7 @@
     <ClCompile Include="vpid.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\MyVisualUefi\samples\hypervisor\enum_to_str.hpp" />
     <ClInclude Include="asm.hpp" />
     <ClInclude Include="common.hpp" />
     <ClInclude Include="cpp_support.hpp" />

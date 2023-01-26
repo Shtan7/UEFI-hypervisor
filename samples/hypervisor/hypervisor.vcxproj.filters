@@ -248,6 +248,9 @@
     <ClInclude Include="per_cpu_data.hpp">
       <Filter>core\headers</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\MyVisualUefi\samples\hypervisor\enum_to_str.hpp">
+      <Filter>core\headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />

@@ -17,6 +17,7 @@ extern "C"
 #include "vmexit_handler.hpp"
 #include "hook_builder.hpp"
 #include "per_cpu_data.hpp"
+#include <atomic>
 
 namespace hh::hv_operations
 {
@@ -75,32 +76,31 @@ namespace hh::hv_operations
 
     initialize_host_idt();
 
-    bool callback_status = true;
-    std::pair<vcpu*, bool&> callback_argument = { globals::vcpus, callback_status };
+    // Atomic because it is possible to read wrong value from callback_status
+    // because store buffer is not flushed on another logical CPU.
+    std::atomic<bool> callback_status = true;
+    std::pair<vcpu*, std::atomic<bool>&> callback_argument = { globals::vcpus, callback_status };
 
     common::run_on_all_processors([](void* callback_context)
       {
 
-        auto [vcpu_array, callback_status_inner] = *static_cast<std::pair<vcpu*, bool&>*>(callback_context);
-    new (&globals::cpu_related_data[common::get_current_processor_number()]) per_cpu_data{};
+        auto [vcpu_array, callback_status_inner] =
+          *static_cast<std::pair<vcpu*, std::atomic<bool>&>*>(callback_context);
+        new (&globals::cpu_related_data[common::get_current_processor_number()]) per_cpu_data{};
 
-    try
-    {
-      vcpu_array[common::get_current_processor_number()].initialize_guest();
-    }
-    catch (std::exception& e)
-    {
-      PRINT(("%a\n", e.what()));
-      callback_status_inner = false;
-    }
+        try
+        {
+          vcpu_array[common::get_current_processor_number()].initialize_guest();
+        }
+        catch (std::exception& e)
+        {
+          PRINT(("%a\n", e.what()));
+          callback_status_inner = false;
+        }
 
       }, &callback_argument);
 
-    // Fence because it is possible to read wrong value from callback_status
-    // because store buffer is not flushed on another logical CPU.
-    _mm_lfence();
-
-    if (!callback_status)
+    if (!callback_status.load())
     {
       throw std::exception{};
     }
