@@ -7,7 +7,6 @@
 #include "asm.hpp"
 #include "x86.hpp"
 
-#define M_LOG2E    1.44269504088896340736   // log2(e)
 #define DECLSPEC_ALIGN(x)   __declspec(align(x))
 #define PANIC globals::panic_status = true; __halt
 #define PAGE_ALIGN(Va) ((void*)((unsigned long long)(Va) & ~(0x1000 - 1)))
@@ -285,11 +284,6 @@ namespace hh::common
     ~spinlock_guard() noexcept;
   };
 
-  constexpr uint64_t compile_time_log2(uint64_t x) noexcept
-  {
-    return x == 1 ? 0 : 1 + compile_time_log2(x / 2);
-  }
-
   void* memcpy_128bit(void* dest, const void* src, size_t len) noexcept;
   void* memset_256bit(void* dest, const __m256i val, size_t len) noexcept;
 
@@ -298,7 +292,6 @@ namespace hh::common
 
   // Use it only in boot stage. Usage after exit from boot services is prohibited.
   void run_on_all_processors(all_cpus_callback callback, void* context);
-  double log2(double d) noexcept;
 
   // There is only 1 to 1 virt - phys mapping, so we don't need these functions.
   // But in the future I may add full address conversion at set_virtual_address_map_event_handler and

@@ -162,11 +162,6 @@ namespace hh::common
     }
   }
 
-  double log2(double d) noexcept
-  {
-    return log(d) * M_LOG2E;
-  }
-
   void* physical_address_to_virtual_address(uint64_t physical_address)
   {
     // 1 to 1 mapping

@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="math">
-      <UniqueIdentifier>{03b8bed1-2457-46f2-96fe-b1aa293e5670}</UniqueIdentifier>
-    </Filter>
     <Filter Include="cpp">
       <UniqueIdentifier>{7b3ef7c6-4423-4c8c-8da7-3150d01619c7}</UniqueIdentifier>
     </Filter>
@@ -42,24 +39,6 @@
     <ClCompile Include="efi_stub.cpp">
       <Filter>cpp</Filter>
     </ClCompile>
-    <ClCompile Include="log.c">
-      <Filter>math</Filter>
-    </ClCompile>
-    <ClCompile Include="pow.c">
-      <Filter>math</Filter>
-    </ClCompile>
-    <ClCompile Include="scalbn.c">
-      <Filter>math</Filter>
-    </ClCompile>
-    <ClCompile Include="sqrt.c">
-      <Filter>math</Filter>
-    </ClCompile>
-    <ClCompile Include="ceil.c">
-      <Filter>math</Filter>
-    </ClCompile>
-    <ClCompile Include="math_common.c">
-      <Filter>math</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>core</Filter>
     </ClCompile>
@@ -68,27 +47,6 @@
     </ClCompile>
     <ClCompile Include="edk2_vars.c">
       <Filter>vshacks</Filter>
-    </ClCompile>
-    <ClCompile Include="sin.c">
-      <Filter>math</Filter>
-    </ClCompile>
-    <ClCompile Include="cos.c">
-      <Filter>math</Filter>
-    </ClCompile>
-    <ClCompile Include="kernel_cos.c">
-      <Filter>math</Filter>
-    </ClCompile>
-    <ClCompile Include="kernel_sin.c">
-      <Filter>math</Filter>
-    </ClCompile>
-    <ClCompile Include="rem_pio2.c">
-      <Filter>math</Filter>
-    </ClCompile>
-    <ClCompile Include="kernel_rem_pio2.c">
-      <Filter>math</Filter>
-    </ClCompile>
-    <ClCompile Include="floor.c">
-      <Filter>math</Filter>
     </ClCompile>
     <ClCompile Include="hypervisor.cpp">
       <Filter>core</Filter>
@@ -145,12 +103,6 @@
     </ClInclude>
     <ClInclude Include="uefi.hpp">
       <Filter>cpp</Filter>
-    </ClInclude>
-    <ClInclude Include="math_common.h">
-      <Filter>math</Filter>
-    </ClInclude>
-    <ClInclude Include="math.hpp">
-      <Filter>math</Filter>
     </ClInclude>
     <ClInclude Include="delete_constructors.hpp">
       <Filter>tools</Filter>

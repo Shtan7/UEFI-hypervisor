@@ -270,14 +270,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ceil.c">
-      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IntrinsicFunctions>
-      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OnlyExplicitInline</InlineFunctionExpansion>
-      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</WholeProgramOptimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
-    </ClCompile>
     <ClCompile Include="common.cpp" />
-    <ClCompile Include="cos.c" />
     <ClCompile Include="cpp_support.cpp">
       <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IntrinsicFunctions>
       <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='DebugUEFI|x64'">false</IntrinsicFunctions>
@@ -291,54 +284,18 @@
     <ClCompile Include="exc_common.cpp" />
     <ClCompile Include="exc_dispatch.cpp" />
     <ClCompile Include="fh4.cpp" />
-    <ClCompile Include="floor.c" />
     <ClCompile Include="hook_builder.cpp" />
     <ClCompile Include="hypervisor.cpp" />
     <ClCompile Include="interrupt_handling.cpp">
       <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='DebugUEFI|x64'">true</WholeProgramOptimization>
     </ClCompile>
     <ClCompile Include="invept.cpp" />
-    <ClCompile Include="kernel_cos.c" />
-    <ClCompile Include="kernel_rem_pio2.c" />
-    <ClCompile Include="kernel_sin.c" />
-    <ClCompile Include="log.c">
-      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IntrinsicFunctions>
-      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OnlyExplicitInline</InlineFunctionExpansion>
-      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</WholeProgramOptimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
-    </ClCompile>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="math_common.c">
-      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IntrinsicFunctions>
-      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OnlyExplicitInline</InlineFunctionExpansion>
-      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</WholeProgramOptimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinSpace</Optimization>
-    </ClCompile>
     <ClCompile Include="per_cpu_data.cpp" />
     <ClCompile Include="win_driver.cpp" />
     <ClCompile Include="pe.cpp" />
-    <ClCompile Include="pow.c">
-      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IntrinsicFunctions>
-      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OnlyExplicitInline</InlineFunctionExpansion>
-      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</WholeProgramOptimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
-    </ClCompile>
     <ClCompile Include="ept_handler.cpp" />
     <ClCompile Include="pt_handler.cpp" />
-    <ClCompile Include="rem_pio2.c" />
-    <ClCompile Include="scalbn.c">
-      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OnlyExplicitInline</InlineFunctionExpansion>
-      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IntrinsicFunctions>
-      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</WholeProgramOptimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
-    </ClCompile>
-    <ClCompile Include="sin.c" />
-    <ClCompile Include="sqrt.c">
-      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IntrinsicFunctions>
-      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OnlyExplicitInline</InlineFunctionExpansion>
-      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</WholeProgramOptimization>
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
-    </ClCompile>
     <ClCompile Include="tlsf.c" />
     <ClCompile Include="type_info.cpp" />
     <ClCompile Include="vcpu.cpp" />
@@ -367,8 +324,6 @@
     <ClInclude Include="instruction_error.hpp" />
     <ClInclude Include="interrupt.hpp" />
     <ClInclude Include="invept.hpp" />
-    <ClInclude Include="math.hpp" />
-    <ClInclude Include="math_common.h" />
     <ClInclude Include="memory_manager.hpp" />
     <ClInclude Include="msr.hpp" />
     <ClInclude Include="pe.hpp" />
